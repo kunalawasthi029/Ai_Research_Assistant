@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
-import os
+import sys
 import threading
 from concurrent.futures import Future, ThreadPoolExecutor, wait
 from contextlib import ExitStack
@@ -44,7 +44,7 @@ class InstanceLease:
                 file.flush()
             file.seek(0)
             try:
-                if os.name == "nt":
+                if sys.platform == "win32":
                     import msvcrt
 
                     msvcrt.locking(file.fileno(), msvcrt.LK_NBLCK, 1)

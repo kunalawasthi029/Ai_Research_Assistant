@@ -27,6 +27,17 @@ jobs:
           python-version: '3.11'
           cache: pip
           cache-dependency-path: requirements.lock
+      - name: Create isolated evaluation environment
+        shell: python
+        run: |
+          import os
+          import pathlib
+          import venv
+          environment = pathlib.Path(os.environ["RUNNER_TEMP"]) / "research-eval-venv"
+          venv.EnvBuilder(with_pip=True).create(environment)
+          binaries = environment / ("Scripts" if os.name == "nt" else "bin")
+          with open(os.environ["GITHUB_PATH"], "a", encoding="utf-8") as path_file:
+              path_file.write(str(binaries) + "\n")
       - name: Install locked dependencies
         run: |
           python -m pip install setuptools==84.2.1 wheel==0.48.0

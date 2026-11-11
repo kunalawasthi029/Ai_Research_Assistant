@@ -7,6 +7,7 @@ import os
 import queue
 import signal
 import subprocess
+import sys
 import time
 from collections.abc import Callable
 from contextlib import suppress
@@ -42,7 +43,7 @@ def _stop(process: Any, new_session: bool) -> None:
     """Stop only this still-running owned worker and its descendants."""
     if not process.is_alive():
         return
-    if os.name == "nt":
+    if sys.platform == "win32":
         try:
             subprocess.run(
                 ["taskkill", "/PID", str(process.pid), "/T", "/F"],

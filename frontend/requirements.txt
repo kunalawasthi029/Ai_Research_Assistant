@@ -1,0 +1,5 @@
+# Community Cloud reads the requirements beside frontend/app.py.
+# Direct pins match the verified project installation; cloud build is unverified.
+streamlit==1.65.0
+httpx==0.28.1
+python-dotenv==1.2.4

@@ -1,0 +1,16 @@
+{
+  "review_date": "2026-11-11",
+  "offline_tests": {
+    "passed": 670,
+    "live_tests_deselected": 7,
+    "combined_core_frontend_evaluation_coverage_percent": 94.40
+  },
+  "ruff_lint": "passed",
+  "ruff_format": {"status": "passed", "files": 156},
+  "mypy": {"status": "passed", "source_files": 85},
+  "documentation_links": "passed",
+  "publication_secret_scan": "no detected matches",
+  "latest_citation_changes_live_acceptance": "unverified",
+  "full_comparative_evaluation": "incomplete",
+  "deployment": "cancelled; not performed"
+}

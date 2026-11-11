@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools==84.2.1", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-agent"
+version = "0.1.0"
+description = "Agentic AI research and report generation system using LangGraph and Groq."
+requires-python = ">=3.11"
+dependencies = [
+    "groq==0.37.1",
+    "langchain-core==0.3.86",
+    "langchain-groq==0.3.8",
+    "langgraph==0.6.11",
+    "langgraph-checkpoint-sqlite==2.0.11",
+    "pydantic==2.14.3",
+    "pydantic-settings==2.15.0",
+    "fastapi==0.162.0",
+    "uvicorn[standard]==0.54.0",
+    "httpx==0.28.1",
+    "streamlit==1.65.0",
+    "tenacity==9.2.1",
+    "python-dotenv==1.2.4",
+    "ddgs==9.16.1",
+    "beautifulsoup4==4.15.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.4.2",
+    "pytest-asyncio==0.26.0",
+    "pytest-cov==6.3.0",
+    "respx==0.23.1",
+    "ruff==0.17.4",
+    "mypy==1.20.2",
+    "pre-commit==4.6.2",
+]
+tavily = [
+    "tavily-python==0.8.5",
+]
+
+[project.scripts]
+research-agent = "research_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-m 'not live'"
+testpaths = ["tests"]
+asyncio_mode = "auto"
+markers = [
+    "live: tests that require a real Groq API key (deselect with '-m not live')",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "SIM"]
+ignore = ["E501", "N806", "SIM102", "SIM114", "UP035", "B008", "B904", "B017"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["src/research_agent", "frontend"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__",
+    "if TYPE_CHECKING",
+]
+
+[tool.setuptools.package-data]
+research_agent = ["prompts/*.md"]

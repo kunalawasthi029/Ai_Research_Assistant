@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "frozen_at": "2026-11-10",
+  "queries": [
+    {
+      "id": "q01",
+      "query": "What are the latest advances in quantum computing error correction?",
+      "expected_topics": [
+        "surface codes",
+        "logical qubits",
+        "error rates",
+        "quantum threshold"
+      ],
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": "q02",
+      "query": "How is CRISPR gene editing being used in agriculture?",
+      "expected_topics": [
+        "crop improvement",
+        "disease resistance",
+        "regulation",
+        "food security"
+      ],
+      "difficulty": "medium",
+      "category": "science"
+    },
+    {
+      "id": "q03",
+      "query": "What is the current state of nuclear fusion energy research?",
+      "expected_topics": [
+        "ITER",
+        "NIF",
+        "plasma confinement",
+        "net energy",
+        "timeline"
+      ],
+      "difficulty": "medium",
+      "category": "energy"
+    },
+    {
+      "id": "q04",
+      "query": "How do large language models handle hallucination and factual accuracy?",
+      "expected_topics": [
+        "RAG",
+        "grounding",
+        "evaluation",
+        "mitigation strategies"
+      ],
+      "difficulty": "hard",
+      "category": "ai"
+    },
+    {
+      "id": "q05",
+      "query": "What are the environmental impacts of cryptocurrency mining?",
+      "expected_topics": [
+        "energy consumption",
+        "carbon footprint",
+        "proof of stake",
+        "e-waste"
+      ],
+      "difficulty": "easy",
+      "category": "environment"
+    },
+    {
+      "id": "q06",
+      "query": "How is artificial intelligence being applied in drug discovery?",
+      "expected_topics": [
+        "molecule design",
+        "protein folding",
+        "clinical trials",
+        "AlphaFold"
+      ],
+      "difficulty": "medium",
+      "category": "healthcare"
+    },
+    {
+      "id": "q07",
+      "query": "What are the main challenges in autonomous vehicle safety?",
+      "expected_topics": [
+        "sensor fusion",
+        "edge cases",
+        "regulation",
+        "liability",
+        "testing"
+      ],
+      "difficulty": "medium",
+      "category": "technology"
+    },
+    {
+      "id": "q08",
+      "query": "How does blockchain technology work and what are its limitations?",
+      "expected_topics": [
+        "consensus",
+        "scalability",
+        "energy",
+        "smart contracts"
+      ],
+      "difficulty": "easy",
+      "category": "technology"
+    },
+    {
+      "id": "q09",
+      "query": "What is the current scientific understanding of microplastics in the human body?",
+      "expected_topics": [
+        "detection",
+        "health effects",
+        "sources",
+        "accumulation"
+      ],
+      "difficulty": "hard",
+      "category": "health"
+    },
+    {
+      "id": "q10",
+      "query": "How are brain-computer interfaces progressing toward clinical use?",
+      "expected_topics": [
+        "Neuralink",
+        "implants",
+        "paralysis",
+        "FDA",
+        "signal processing"
+      ],
+      "difficulty": "hard",
+      "category": "technology"
+    },
+    {
+      "id": "q11",
+      "query": "What are the causes and consequences of the global semiconductor shortage?",
+      "expected_topics": [
+        "supply chain",
+        "TSMC",
+        "geopolitics",
+        "CHIPS Act"
+      ],
+      "difficulty": "medium",
+      "category": "economics"
+    },
+    {
+      "id": "q12",
+      "query": "How effective are mRNA vaccines compared to traditional vaccines?",
+      "expected_topics": [
+        "immune response",
+        "efficacy",
+        "side effects",
+        "storage",
+        "development speed"
+      ],
+      "difficulty": "medium",
+      "category": "healthcare"
+    },
+    {
+      "id": "q13",
+      "query": "What is the role of gut microbiome in mental health?",
+      "expected_topics": [
+        "gut-brain axis",
+        "neurotransmitters",
+        "depression",
+        "probiotics"
+      ],
+      "difficulty": "hard",
+      "category": "health"
+    },
+    {
+      "id": "q14",
+      "query": "How do carbon capture technologies work and are they scalable?",
+      "expected_topics": [
+        "DAC",
+        "CCS",
+        "cost",
+        "storage",
+        "scalability"
+      ],
+      "difficulty": "medium",
+      "category": "environment"
+    },
+    {
+      "id": "q15",
+      "query": "What is the state of 6G wireless technology research?",
+      "expected_topics": [
+        "terahertz",
+        "AI integration",
+        "timeline",
+        "use cases"
+      ],
+      "difficulty": "easy",
+      "category": "technology"
+    },
+    {
+      "id": "q16",
+      "query": "How do deepfakes work and what detection methods exist?",
+      "expected_topics": [
+        "GANs",
+        "detection algorithms",
+        "regulation",
+        "misinformation"
+      ],
+      "difficulty": "medium",
+      "category": "ai"
+    },
+    {
+      "id": "q17",
+      "query": "What progress has been made in solid-state battery technology?",
+      "expected_topics": [
+        "electrolytes",
+        "energy density",
+        "manufacturing",
+        "EV adoption"
+      ],
+      "difficulty": "medium",
+      "category": "energy"
+    },
+    {
+      "id": "q18",
+      "query": "How is machine learning used in climate change prediction?",
+      "expected_topics": [
+        "weather models",
+        "satellite data",
+        "emissions forecasting"
+      ],
+      "difficulty": "medium",
+      "category": "environment"
+    },
+    {
+      "id": "q19",
+      "query": "What are the ethical implications of facial recognition technology?",
+      "expected_topics": [
+        "privacy",
+        "bias",
+        "surveillance",
+        "regulation",
+        "consent"
+      ],
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": "q20",
+      "query": "How do quantum sensors work and what applications do they have?",
+      "expected_topics": [
+        "atomic clocks",
+        "magnetometry",
+        "gravimetry",
+        "medical imaging"
+      ],
+      "difficulty": "hard",
+      "category": "science"
+    }
+  ]
+}

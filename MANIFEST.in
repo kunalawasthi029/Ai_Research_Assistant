@@ -1,0 +1,5 @@
+recursive-include src/research_agent/prompts *.md
+prune .uv-cache
+prune .python
+prune .venv
+prune .venv311
